@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Assignment</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .header form {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+      }
+
+      .header input {
+        padding: 5px;
+        margin-right: 10px;
+        width: 300px;
+      }
+
+      .header .auth-links {
+        display: flex;
+        align-items: center;
+      }
+
+      .login-signup {
+        background-color: black;
+        padding: 5px 15px;
+        color: white;
+        border: none;
+        text-decoration: none;
+        margin-left: 10px;
+      }
+
+      .login-signup a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      .sidebar {
+        width: 220px;
+        background-color: #333;
+        color: white;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+
+      .profile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .sidebar a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .main-content {
+        margin-left: 240px;
+        padding: 20px;
+      }
+
+      section {
+        display: none;
+      }
+
+      section:target {
+        display: block;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <form>
+        <input type="text" placeholder="Search..." />
+        <button type="submit">🔍</button>
+      </form>
+      <div class="auth-links">
+        <a href="#login" class="login-signup">Login</a>
+        <a href="#signup" class="login-signup">Sign Up</a>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="profile">
+        <img src="img.jpg" alt="Profile Image" />
+      </div>
+
+      <a href="#home">HOME</a>
+      <a href="#aboutme">ABOUT ME</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#story">STORY</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+
+    <div class="main-content">
+      <section id="home">
+        <h1>Welcome to My Journey</h1>
+        <p>
+          I am just starting my path as a software developer. My goal is to
+          learn as much as possible and build practical, functional software. I
+          want to make an impact with my skills and grow in the tech industry.
+        </p>
+        <p>
+          This website represents my learning journey, where I will document my
+          progress, share my experiences, and collaborate with others in the
+          world of programming.
+        </p>
+      </section>
+
+      <section id="aboutme">
+        <h1>ABOUT ME</h1>
+        <p>
+          I am a beginner software student eager to dive into the world of
+          programming. My focus is on learning the fundamentals of software
+          development, coding languages, and best practices.
+        </p>
+        <p>
+          Every day, I am committed to improving my coding skills by working on
+          small projects and participating in online courses. I aspire to become
+          a proficient developer and contribute to exciting, impactful projects.
+        </p>
+      </section>
+
+      <section id="gallery">
+        <h1>Gallery</h1>
+        <p>
+          The Gallery section presents significant milestones in my software
+          development journey, including the creation of a responsive website,
+          the development of a Python automation project, and a collaborative
+          group project during a coding bootcamp. Each image reflects meaningful
+          progress, showcasing creativity, technical application, and teamwork.
+        </p>
+        <img src="related-3.jpg" alt="Collaboration in coding bootcamp" />
+        <img src="related-1.jpg" alt="Python application project" />
+        <img src="related-2.jpg" alt="Responsive website" />
+      </section>
+
+      <section id="story">
+        <h1>MY STORY</h1>
+        <p>
+          My journey into coding started with an interest in technology. I was
+          amazed by the potential of programming to create solutions to
+          real-world problems. Over time, I became more involved in learning,
+          testing, and building small apps.
+        </p>
+        <p>
+          My story is just beginning, and I am determined to continue learning
+          and growing as a developer. Every step I take is one step closer to
+          achieving my goals and making my mark in the tech world.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h1>CONTACT</h1>
+        <p>Contact me by filling out the form below:</p>
+        <form>
+          <div>
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            /><br /><br />
+          </div>
+          <div>
+            <label for="password">Password:</label><br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            /><br /><br />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 My Website. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
